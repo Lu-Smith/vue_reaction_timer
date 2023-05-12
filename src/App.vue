@@ -14,6 +14,20 @@ export default {
   components: {
     Block,
     Results
+  },
+  data() {
+    return {
+      isPlaying: false,
+      delay: null
+    }
+
+  },
+  methods: {
+    start() {
+      this.delay = 2000 + Math.random() * 5000
+      this.isPlaying = true
+      console.log(this.delay)
+    }
   }
 }
 </script>
