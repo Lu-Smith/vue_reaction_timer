@@ -1,6 +1,6 @@
 <template>
 <h1>Ninja Reaction Timer</h1>
-<button @click="start">play</button>
+<button @click="start" :disabled="isPlaying">play</button>
 <Block v-if="isPlaying" :delay="delay" />
 <Results />
 </template>
@@ -39,5 +39,21 @@ export default {
   text-align: center;
   color: #444;
   margin-top: 60px;
+}
+button {
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: red;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(245, 62, 62);
+  color: white;
+  box-shadow: none;
 }
 </style>
