@@ -65,4 +65,9 @@ button:hover {
   box-shadow: none;
 }
 
+button[disabled] {
+  opacity: 0.5;
+  color: white;
+  cursor: not-allowed;
+}
 </style>
