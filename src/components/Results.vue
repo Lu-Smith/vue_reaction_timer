@@ -1,5 +1,5 @@
 <template>
-    <h2>Reaction time: {{score}}ms</h2>
+    <h2>Reaction time: <span>{{score}}ms</span></h2>
     <p class="rank">{{rank}}</p>
 </template>
 
@@ -24,6 +24,13 @@ mounted() {
 </script>
 
 <style>
+h2 {
+    margin-top: 40px;
+}
+
+h2 span {
+    color: rgb(168, 16, 16);
+}
 .rank {
     font-size: 1.4em;
     color: rgb(168, 16, 16);
