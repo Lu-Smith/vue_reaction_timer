@@ -1,5 +1,6 @@
 <template>
-<h1>Hello World</h1>
+<h1>Ninja Reaction Timer</h1>
+<button @click="start">play</button>
 <Block />
 <Results />
 </template>
