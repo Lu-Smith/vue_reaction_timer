@@ -1,12 +1,18 @@
 <template>
 <h1>Hello World</h1>
+<Block />
+<Results />
 </template>
 
 <script>
+import Block from './components/Block.vue'
+import Results from './components/Results.vue'
 
 export default {
   name: 'App',
   components: {
+    Block,
+    Results
   }
 }
 </script>
