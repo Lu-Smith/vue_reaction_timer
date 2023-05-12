@@ -3,17 +3,21 @@
 <button @click="start" :disabled="isPlaying">play</button>
 <Block v-if="isPlaying" :delay="delay" @end="endGame" />
 <Results :score="score" v-if="showResults" />
+<Footer />
 </template>
 
 <script>
 import Block from './components/Block.vue'
 import Results from './components/Results.vue'
+import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
   components: {
     Block,
-    Results
+    Results,
+    Footer
   },
   data() {
     return {

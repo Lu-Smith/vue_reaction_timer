@@ -1,5 +1,5 @@
 <template>
-    <p>
+    <p class="footer-note">
     This project was coded by
     <a href="https://www.lunasmithart.com/" target="_blank" class="cool-link"
       >Luna Smith</a
@@ -14,25 +14,21 @@
   </p>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
-p {
+.footer-note {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   padding: 20px 0;
   font-weight: 500;
-  border-radius: 0 0 40px 40px;
   background-color: rgb(52, 15, 58);
-  color: #c8efde;
+  color: #f1f5f3;
 }
 
 .cool-link {
   position: relative;
   text-decoration: none;
-  color: #fbf6f6;
+  color: #fcd6d6;
   transition: all 0.3s ease;
   letter-spacing: 1px;
 }
@@ -44,7 +40,7 @@ p {
   height: 3px;
   bottom: -5px;
   left: 0;
-  background-color: #c8efde;
+  background-color: #f87e0d;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -56,6 +52,6 @@ p {
 }
 
 .cool-link:hover {
-  color: #c8efde;
+  color: #f87e0d;
 }
 </style>
