@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock">
+  <div class="block" v-if="showBlock" @click="stopTimer">
     click me
   </div>
 </template>
@@ -23,7 +23,7 @@ mounted() {
 methods: {
     startTimer() {
         this.timer = setInterval( () => {
-            this.reactionTime +10
+            this.reactionTime += 10
         }, 10)
     },
     stopTimer() {
